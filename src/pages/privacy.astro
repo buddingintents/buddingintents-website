@@ -1,0 +1,5 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+---
+<Layout title="Website privacy | Budding Intents"><article class="section prose"><span class="eyebrow">WEBSITE PRIVACY</span><h1>A clear view of your data.</h1><p>This website is operated by Ankit Sharma under the name Budding Intents.</p><h2>Browsing and preferences</h2><p>This version does not include advertising or analytics scripts. Your theme choice is saved in your browser's local storage. The hosting provider processes requests and technical information needed to serve the website.</p><h2>Contacting me</h2><p>When enabled, the contact form sends your name, email address, and message through Formspree so I can respond. Please avoid including sensitive personal information. Messages may also be retained in my email inbox. Contact me to request deletion.</p><h2>Other services and apps</h2><p>Google Play, GitHub, Blogger, and Formspree have their own privacy policies. Each app's privacy information is available from its Google Play listing; this notice covers this website only.</p><h2>Questions</h2><a href={`mailto:${site.email}`}>{site.email}</a></article></Layout>

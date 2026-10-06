@@ -1,0 +1,13 @@
+{
+  "title": "Budding Intents",
+  "headline": "Small ideas.\nUseful things.",
+  "intro": "An independent app studio by Ankit Sharma. Building thoughtful tools for everyday life, one idea at a time.",
+  "email": "buddingintents@gmail.com",
+  "about": "I'm Ankit, the person behind Budding Intents. This is where I turn everyday problems and a little curiosity into apps, experiments, and things worth sharing.",
+  "blogUrl": "https://buddingintents.blogspot.com",
+  "githubUrl": "https://github.com/buddingintents",
+  "apps": [
+    {"slug":"lets-go-dutch","name":"Let's Go Dutch","tagline":"Good company.\nClear balances.","description":"Keep shared expenses organised, whether you're travelling together, sharing a home, or splitting dinner.","category":"Everyday finance","playUrl":"https://play.google.com/store/apps/details?id=com.buddingintents.letsgodutch","sourceUrl":"https://github.com/buddingintents/LetsGoDutch","features":["Keep group expenses together","See who owes what","Make settling up simpler"],"accent":"lime"},
+    {"slug":"prompt-enhancer","name":"Prompt Enhancer","tagline":"An idea,\nbetter expressed.","description":"Turn rough thoughts into clearer prompts. Refine, save, and reuse your ideas in one focused workspace.","category":"AI productivity","playUrl":"https://play.google.com/store/apps/details?id=com.buddingintents.promptenhancer","sourceUrl":"https://github.com/buddingintents/PromptEnhancerFlutter","features":["Refine and structure your prompts","Save useful prompts for later","Use your own AI provider keys"],"accent":"blue"}
+  ]
+}

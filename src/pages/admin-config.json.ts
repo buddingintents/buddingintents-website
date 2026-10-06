@@ -1,0 +1,6 @@
+import site from '../data/site.json';
+export function GET(){
+ const text=(name:string,label:string,widget='string')=>({name,label,widget});
+ const config={backend:{name:'github',repo:import.meta.env.PUBLIC_CMS_REPO||'buddingintents/buddingintents-website',branch:'main',base_url:import.meta.env.PUBLIC_SITE_URL||'https://www.buddingintents.com',auth_endpoint:'api/auth'},media_folder:'public/uploads',public_folder:'/uploads',collections:[{name:'website',label:'Website',files:[{name:'content',label:'Studio content',file:'src/data/site.json',fields:[text('title','Studio name'),text('headline','Homepage headline (two lines)','text'),text('intro','Introduction','text'),text('email','Contact email'),text('about','About Ankit','text'),text('blogUrl','Blogger URL'),text('githubUrl','GitHub URL'),{name:'apps',label:'Apps',widget:'list',fields:[text('slug','URL slug'),text('name','App name'),text('tagline','Two-line headline','text'),text('description','Description','text'),text('category','Category'),text('playUrl','Google Play URL'),text('sourceUrl','Source code URL'),{name:'features',label:'Features',widget:'list'}, {name:'accent',label:'Colour',widget:'select',options:['lime','blue']}]}]}]}]};
+ return new Response(JSON.stringify(config),{headers:{'Content-Type':'application/json'}})
+}
